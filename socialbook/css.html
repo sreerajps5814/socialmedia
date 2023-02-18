@@ -1,0 +1,178 @@
+<html>
+    <head>
+        <title>
+            
+        </title>
+    </head>
+        <style>
+            h1
+            {   background-color: azure;
+                text-align: center;
+                color: mediumaquamarine;
+                font-family: sans-serif;
+                padding: 5px;
+                word-spacing: 5px;
+            }
+            p,label
+            {
+                color: brown;
+            }
+            input{
+                border-color: aqua;
+                border-bottom-style: solid;
+                border-radius: 10px;
+            }
+            body{
+             background-image: url("2.jpg");
+               background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+               
+                         
+            }
+            #a{
+                width:500px;
+                height: 100px;          
+                background-position: center;  
+                background-color: azure;
+                border: 3px solid  red;
+                box-shadow: 10px 10px 5px yellow;
+                text-shadow: 3px 3px 6px black;          } 
+            table{
+                border-color: blue;
+                border: 10px;
+                text-align: center;
+                width:20%;
+                height: 20%;
+            }
+            th,td{
+                background-color: coral;
+                border-collapse: separate;
+                border-spacing: 20px;
+            }
+            button
+            {
+                color: green;
+                font: 25px;
+                color: yellowgreen;
+                font-style: italic;
+                font-family: monospace;
+                background-color: chocolate;
+                border: 5px solid blue;
+                font-weight: bold;
+                
+            }
+            #start{
+                display: flex;
+                justify-content: flex-start;
+            }
+            .flex{
+                width: 50px;
+                height: 50px;
+                background-color: aqua;
+                border: 1px solid black;
+                margin: 5px;
+            }
+            .abc{
+                width: 200px;
+                height: 50px;
+                background-color: blueviolet;
+                transition: width 2s;
+                animation-timing-function: cubic-bezier(.59,1.01,0,.01)
+            }
+           .abc:hover{
+            width:500px;}
+            @keyframes demo{
+                0%{background: blueviolet;width: 50px; left: 0px;top: 0px;}
+                25%{background: yellow;width: 75px; left: 200px;top: 0px;}
+                50%{background: blue;width: 50px; left: 200px;top: 200px;}
+                75%{background: red;width: 75px; left: 0px;top: 200px;}
+                100%{background: green;width: 50px; left: 0px;top: 0px;}
+               
+            }
+            .box{
+                height: 50px;
+                width: 50px;
+                background-color: aqua;
+                transition: width 2s;
+                position: relative;
+                animation: demo 5s;
+                border-radius: 200px;
+                margin-left: 300px;
+                margin-top: -50px;
+            }
+            .box:hover{
+                width: 500px;
+            }
+            .load{
+                left: 30%;
+                width: 150px;
+                height: 150px;
+           
+                border-radius: 50%;
+                border: 20px ;
+                position: absolute;
+                border-top: 20px solid yellow;
+                animation: spin 2s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes spin
+            {
+                0%{transform: rotate(0deg);}
+                100%{transform: rotate(360deg);}
+            }
+        </style>
+   <div id="a">
+    <h1>Welcom to CSS</h1>
+        
+    </div>
+    <p>This is a paragraph</p>
+    <div id="start">
+        <div class="flex">a</div>
+        <div class="flex">b</div>
+        <div class="flex">c</div>
+        <div class="flex">d</div>
+        <div class="flex">e</div>
+    </div>
+  <label>Enter your Name</label> <input type="text" placeholder="Enter your name">
+       
+    <table>
+        <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Subject</th>
+        <th>Mark</th>
+            </tr>
+        <tr>
+            <td>manu</td>
+            <td>vs</td>
+            <td>maths</td>
+            <td>60</td>
+        </tr>
+        <tr>
+            <td>Vivek</td>
+            <td>menon</td>
+            <td>physics</td>
+            <td>75</td>
+        </tr>
+        <tr>
+            <td>Sooraj</td>
+            <td>kumar</td>
+            <td>chemistry</td>
+            <td>59</td>
+        </tr>
+        <tr>
+            <td>Karthik</td>
+            <td>hs</td>
+            <td>maths</td>
+            <td>80</td>
+        </tr>
+    </table>
+    <div class="abc"></div><div class="box"></div>
+        <body>
+            <button>submit</button>
+            <div class="load"></div>
+         
+        </body>
+</html>
